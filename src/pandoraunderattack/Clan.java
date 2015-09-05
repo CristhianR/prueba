@@ -8,6 +8,10 @@ public class Clan {
     int CantidadJugadores;
     int RecursosTotales;
     String Lider;
+    int Reliquias;
+    int DiasDesdeCreacion;
+    int x;
+    int y;
     
 
     
@@ -16,6 +20,7 @@ public class Clan {
         Jugador jugador1,jugador2,jugador3;
         jugador1= new Jugador();
         Armas armas = new Armas(jugador1);
+        Recursos recursos = new Recursos(jugador1);
       
         
         
@@ -24,6 +29,7 @@ public class Clan {
         ld.insertarInicio("a");
         ld.insertarFin("b");
         ld.insertarFin("c");
+        ld.insertarInicio(jugador1.Recursos);
         
         ld.MostrarAdelante();
     }

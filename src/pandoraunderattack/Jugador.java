@@ -3,11 +3,19 @@ package pandoraunderattack;
 public class Jugador {
 
     String nombre;
-    int maeritocracia;
+    int meritocracia;
     int CantidadMadera;
     int CantidadOro;
+    int CantidadHierro;
+    int CantidadPiedra;
+    int CantidadPlata;
+    int CantidadAcero;
+    int CantidadCobre;
+    int PiedraMagica;
     String TipoArma;
     String Rango;
+    String Recursos;
+    int ExpBatalla;
 
     public void Jugador() {
         
@@ -37,7 +45,7 @@ public class Jugador {
         return Rango;
     }
     
-    public void setRango(){
+    public void setRango(String Rango){
         this.Rango = Rango;
     }
 }
