@@ -2,13 +2,13 @@
 package pandoraunderattack;
 
 
-public class listaDoble {
+public class DLList {
     
     private nodo inicio;
     private nodo fin;
     
     
-    public listaDoble() {
+    public DLList() {
         inicio = null;
         fin = null;
     }

@@ -19,19 +19,29 @@ public class Clan {
         
         Jugador jugador1,jugador2,jugador3;
         jugador1= new Jugador();
-        Armas armas = new Armas(jugador1);
-        Recursos recursos = new Recursos(jugador1);
-      
+        Reliquias r = new Reliquias();
+        //Armas armas = new Armas(jugador1);
+        //Recursos recursos = new Recursos(jugador1);
+        
+        DLList reliquias = new DLList();
+        DLList jugadores = new DLList();
+        DLList armas = new DLList();
+        DLList recursos = new DLList();
+        
+        Clan clan = new Clan();
         
         
-        listaDoble ld = new listaDoble();
+        
+        
+        DLList ld = new DLList();
         
         ld.insertarInicio("a");
         ld.insertarFin("b");
         ld.insertarFin("c");
-        ld.insertarInicio(jugador1.Recursos);
         
         ld.MostrarAdelante();
     }
+    
+    
     
 }

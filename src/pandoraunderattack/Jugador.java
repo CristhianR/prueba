@@ -48,4 +48,6 @@ public class Jugador {
     public void setRango(String Rango){
         this.Rango = Rango;
     }
+    
+    
 }

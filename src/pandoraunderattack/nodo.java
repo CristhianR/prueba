@@ -9,6 +9,7 @@ public class nodo {
     private String dato;
     
     
+    
     public nodo(String dat, nodo ant, nodo sig){
         
         siguiente = sig;

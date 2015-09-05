@@ -12,6 +12,20 @@ public class Recursos {
     
     
     public Recursos(Jugador jug){
+        
+        DLList recursos = new DLList();
+        
+        recursos.insertarInicio("Oro");// No sé si así será como se usa la DLList.
+        recursos.insertarInicio("Plata");
+        recursos.insertarInicio("Madera");
+        recursos.insertarInicio("Piedra");
+        recursos.insertarInicio("Hierro");
+        recursos.insertarInicio("Cobre");
+        recursos.insertarInicio("Acero");
+        recursos.insertarInicio("PiedraMagica");
+        
+        recursos.insertarInicio(nombreRecurso); //No sé cual es más conveniente usar.
+        
        
         
     }
