@@ -3,8 +3,8 @@ package pandoraunderattack;
 
 public class Recursos {
     
-    String nombreRecurso;
-    int meritocracia;
+    String NombreRecurso;
+    int Meritocracia;
     boolean SubeRango;
     int ID;
     int x;
@@ -24,7 +24,7 @@ public class Recursos {
         recursos.insertarInicio("Acero");
         recursos.insertarInicio("PiedraMagica");
         
-        recursos.insertarInicio(nombreRecurso); //No sé cual es más conveniente usar.
+        recursos.insertarInicio(NombreRecurso); //No sé cual es más conveniente usar.
         
        
         
@@ -32,43 +32,43 @@ public class Recursos {
 
     public void recursos(Jugador jug){
         
-        if(nombreRecurso == "Oro"){
-            jug.meritocracia += 100;}
-        if(nombreRecurso == "Plata"){
-            jug.meritocracia += 50;}
-        if(nombreRecurso == "Cobre"){
-            jug.meritocracia += 25; }
-        if(nombreRecurso == "Hierro"){
-            jug.meritocracia += 15; }
-        if(nombreRecurso == "piedra"){
-            jug.meritocracia += 10; }
-        if(nombreRecurso == "Acero"){
-            jug.meritocracia += 20; }
-        if(nombreRecurso == "Madera"){
-            jug.meritocracia += 5; }
-        if(nombreRecurso == "PiedraMagica"){
-            jug.meritocracia += 1500; }
+        if(NombreRecurso == "Oro"){
+            jug.Meritocracia += 100;}
+        if(NombreRecurso == "Plata"){
+            jug.Meritocracia += 50;}
+        if(NombreRecurso == "Cobre"){
+            jug.Meritocracia += 25; }
+        if(NombreRecurso == "Hierro"){
+            jug.Meritocracia += 15; }
+        if(NombreRecurso == "piedra"){
+            jug.Meritocracia += 10; }
+        if(NombreRecurso == "Acero"){
+            jug.Meritocracia += 20; }
+        if(NombreRecurso == "Madera"){
+            jug.Meritocracia += 5; }
+        if(NombreRecurso == "PiedraMagica"){
+            jug.Meritocracia += 1500; }
         
     }
     
     public void Recolectar() {
         
-        System.out.println("Recogiste" + nombreRecurso);
-        System.out.println("Ganas" + meritocracia + "pts");
+        System.out.println("Recogiste" + NombreRecurso);
+        System.out.println("Ganas" + Meritocracia + "pts");
     }
     
     public void Rangos(Jugador jug){
         
-        if((jug.getRango() == "Novato")&& (jug.meritocracia == 100)){
+        if((jug.getRango() == "Novato")&& (jug.Meritocracia == 100)){
             jug.setRango("Soldado");
             SubeRango = true;}
-        if((jug.getRango() == "Soldado")&& (jug.meritocracia == 500)&& (jug.ExpBatalla == 5)){
+        if((jug.getRango() == "Soldado")&& (jug.Meritocracia == 500)&& (jug.ExpBatalla == 5)){
             jug.setRango("Capitan");
              SubeRango = true;}
-        if((jug.getRango() == "Capitan")&& (jug.meritocracia == 1500)&& (jug.ExpBatalla == 15)){
+        if((jug.getRango() == "Capitan")&& (jug.Meritocracia == 1500)&& (jug.ExpBatalla == 15)){
             jug.setRango("Comandante");
              SubeRango = true;}
-        if((jug.getRango() == "comandante")&& (jug.meritocracia == 1500)&& (jug.ExpBatalla == 35)){
+        if((jug.getRango() == "comandante")&& (jug.Meritocracia == 2500)&& (jug.ExpBatalla == 35)){
             jug.setRango("Caballero");
              SubeRango = true;}
         else {
@@ -85,5 +85,5 @@ public class Recursos {
     }
     
     
-    
 }
+
