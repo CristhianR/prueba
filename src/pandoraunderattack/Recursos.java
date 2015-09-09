@@ -68,7 +68,7 @@ public class Recursos {
         if((jug.getRango() == "Capitan")&& (jug.Meritocracia == 1500)&& (jug.ExpBatalla == 15)){
             jug.setRango("Comandante");
              SubeRango = true;}
-        if((jug.getRango() == "comandante")&& (jug.Meritocracia == 2500)&& (jug.ExpBatalla == 35)){
+        if((jug.getRango() == "Comandante")&& (jug.Meritocracia == 2500)&& (jug.ExpBatalla == 35)){
             jug.setRango("Caballero");
              SubeRango = true;}
         else {
