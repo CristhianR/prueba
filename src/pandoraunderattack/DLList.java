@@ -1,19 +1,30 @@
 
 package pandoraunderattack;
 
-
+/**
+ * Se declara la clase DLList.
+ * Esta clase es una lista doblemente enlazada.
+ * @author cristhian
+ * @version 15/09/15
+ */
 public class DLList {
-    
+    // Se declaran los atributos de la clase.
     private nodo inicio;
     private nodo fin;
     
-    
+    /**
+     * Se crea el constructor.
+     */
     public DLList() {
         inicio = null;
         fin = null;
     }
-    
-    public void insertarInicio(String dato) {
+    /**
+     * Se crea el método de insertar.
+     * Este método sirve más que todo para agregar objetos a la lista.
+     * @param dato 
+     */
+    public void insertarInicio(Object dato) {
         
         if(inicio == null){
             
@@ -26,8 +37,11 @@ public class DLList {
             inicio = nuevo;
         }
     }
-    
-    public void insertarFin(String dato) {
+    /**
+     * este modo es análogo al anterior solo que agrega datos al final de la lista.
+     * @param dato 
+     */
+    public void insertarFin(Object dato) {
         
         if(inicio == null){
             
@@ -40,10 +54,13 @@ public class DLList {
             fin = nuevo;
         }
     }
-    
-    public String ExtraerInicio(){
+    /**
+     * Se crea el método extraer el cual sirve para eliminar datos al inicio de la lista.
+     * @return 
+     */
+    public Object ExtraerInicio(){
         
-        String dato =inicio.getDato();
+        Object dato =inicio.getDato();
         inicio = inicio.getSiguiete();
         
         if(inicio != null) {
@@ -59,10 +76,13 @@ public class DLList {
         return dato;
     }
     
-    
-    public String ExtraerFin(){
+    /**
+     * Análogo al anterior solo que elimina datos al final de la lista.
+     * @return 
+     */
+    public Object ExtraerFin(){
         
-        String dato =fin.getDato();
+        Object dato =fin.getDato();
         fin = fin.getAnterior();
         
         if(inicio != null) {
@@ -77,7 +97,9 @@ public class DLList {
         
         return dato;
    }
-    
+    /**
+     * Este y el siguiente método son solo para imprimir las lista, de adelante hacia atras y viceversa.
+     */
     public void MostrarAdelante(){
         
         nodo temp = inicio;
@@ -102,7 +124,15 @@ public class DLList {
             System.out.println(temp.getDato());
             temp = temp.getAnterior();
         }
-}
+
+    }
+    
+    /**
+     * Se crea el método buscar.
+     * Este método sirve para buscar un dato en específico.
+     * @param dato
+     * @return  un valor booleano
+     */
     public Boolean buscar(String dato){
         
         nodo temp = inicio;

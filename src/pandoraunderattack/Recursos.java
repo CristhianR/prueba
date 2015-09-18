@@ -1,8 +1,12 @@
 
 package pandoraunderattack;
-
+/**
+ * Se declara la clase Recursos.
+ * @author cristhian
+ * @version 17/09/15
+ */
 public class Recursos {
-    
+    //Se declaran los atributos de la clase.
     String NombreRecurso;
     int Meritocracia;
     boolean SubeRango;
@@ -10,9 +14,13 @@ public class Recursos {
     int x;
     int y;
     
-    
+    /**
+     * Se crea el constructor de la clase.
+     * @param jug 
+     * El parámetro que recibe es el jugador, pues de el proviene la información para los métodos.
+     */
     public Recursos(Jugador jug){
-        
+        // Se instancia la clase de la lista doblemente enlazada.
         DLList recursos = new DLList();
         
         recursos.insertarInicio("Oro");// No sé si así será como se usa la DLList.
@@ -30,6 +38,11 @@ public class Recursos {
         
     }
 
+    /**
+     * Se crea el método recursos.
+     * Este método otorga los puntos de meritocracia según el recurso obtenido.
+     * @param jug, pues es al jugador al que se le está otorgando la meritocracia.
+     */
     public void recursos(Jugador jug){
         
         if(NombreRecurso == "Oro"){
@@ -52,11 +65,16 @@ public class Recursos {
     }
     
     public void Recolectar() {
-        
+        // Este método solo imprime el resultado del método anterior.
         System.out.println("Recogiste" + NombreRecurso);
         System.out.println("Ganas" + Meritocracia + "pts");
     }
     
+    /**
+     * Se crea el método rango.
+     * Este método compara la cantidad de meritocracia del jugador para saber si es posible ascenderlo de rango.
+     * @param jug, pues son los puntos del jugador lo que serán comparados para el ascenso de rango. 
+     */
     public void Rangos(Jugador jug){
         
         if((jug.getRango() == "Novato")&& (jug.Meritocracia == 100)){
@@ -78,7 +96,7 @@ public class Recursos {
     }
     
     public void SubirRango(Jugador jug){
-        
+        // Este método solo imprime le resultado del método anterior.
         if(SubeRango == true){
             System.out.println("Subes de Rango a: "+ jug.getRango());
         }

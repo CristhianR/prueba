@@ -1,8 +1,14 @@
 
 package pandoraunderattack;
 
+/**
+ * Se declara la clase Reliquias.
+ * @author cristhian
+ * @version 17/09/15
+ */
+
 public class Reliquias {
-    
+    // Se declara los atributos de la clase.
     String NombreReliquia;
     int reliquias;
     int peso;
@@ -12,7 +18,7 @@ public class Reliquias {
     
     
     public void AddReliquias(){
-        
+        // Se instancia la classe de la lista.
         DLList reliquias = new DLList();
         reliquias.insertarInicio(NombreReliquia);   
     }

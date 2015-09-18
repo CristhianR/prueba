@@ -1,8 +1,15 @@
 
 package pandoraunderattack;
 
+
+/**
+ * Se declara la clase Armas.
+ * @author cristhian
+ * @version 17/09/15
+ */
+
 public class Armas {
-    
+    // Se declara los atributos de la clase.
     
     int TiposRecursos;
     int CantidadRecursos;
@@ -11,18 +18,13 @@ public class Armas {
     String NombreArma;
     boolean Comprobar;
     
-    //public Armas(Jugador jug){
-        
-        //if((jug.GetArmas() == "EspadaN1")&& (jug.CantidadOro == 10)&& (jug.CantidadMadera == 10)){
-          //  jug.SetArmas("Espada2");
-            //comprobar = true;
-        //} else {
-          //  comprobar = false;
-        //}        
-        
-        //}
     
     
+    /**
+     * Se crea el método comprobar.
+     * Este método comprueba si un jugador tiene los recuros necesarios para crear un arma.
+     * @param jug , pues comprueba los recursos propios de cada jugador.
+     */
     public void Comprobar( Jugador jug){
         
         if((NombreArma == "Espada")&& (jug.CantidadPlata == 25)&& (jug.CantidadHierro == 30)){
@@ -67,7 +69,7 @@ public class Armas {
     }
     
     public void CrearArmar(int TiposRecursos,int CantidadRecursos,int CantidadJugadores,String NombreArma){
-        
+        // este método solo imprime el resultado del método anteiror.
         if(Comprobar = true){
             
             System.out.println("Arma creada: " + NombreArma);
@@ -77,7 +79,7 @@ public class Armas {
     
     
     public void CrearArmarEspecial(int TiposRecursos,int CantidadRecursos,int CantidadJugadores,String NombreArma){
-        
+        // este método solo imprime el resultado del método anteiror.
         if(Comprobar = true){
             
             System.out.println("Arma creada: " + NombreArma);

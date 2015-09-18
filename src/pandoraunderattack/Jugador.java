@@ -1,7 +1,13 @@
-package paquete;
+package pandoraunderattack;
+
+/**
+ * Se declara la clase jugador.
+ * @author cristhian
+ * 17/09/15
+ */
 
 public class Jugador {
-
+    // Se declaran los atributos de la clase.
     String Nombre;
     int Meritocracia;
     int CantidadMadera;
@@ -17,7 +23,11 @@ public class Jugador {
     String Recursos;
     int ExpBatalla;
     boolean PandoraUnderAttack;
-
+    
+    
+    /*
+    Se crea el constructor.
+    */
     public void Jugador() {
         
         Rango = "Novato";
@@ -36,10 +46,13 @@ public class Jugador {
 
     }
     
+    /*
+    Se crean los métodos de la clase con sets y gets.
+    */
     public String getNombre() {
         return this.Nombre;
     }
-    
+   
     public void setNombre(String Nombre) {
         this.Nombre = Nombre;
     }

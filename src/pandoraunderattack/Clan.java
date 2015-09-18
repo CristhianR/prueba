@@ -1,9 +1,13 @@
 
 package pandoraunderattack;
 
-
+/**
+ * Se declara la clase clan.
+ * @author cristhian
+ * @version 15/09/15
+ */
 public class Clan {
-    
+    // Se declaran los atributos de la clase.
     String NombreClan;
     int CantidadJugadores;
     int RecursosTotales;
@@ -41,7 +45,7 @@ public class Clan {
         
         ld.MostrarAdelante();
     }
-    
+   
     
     
 }
