@@ -29,7 +29,7 @@ public class Jugador {
     Se crea el constructor.
     */
     public void Jugador() {
-        
+        //Valores predeterminados de los atributos.
         Rango = "Novato";
         Meritocracia = 0;
         CantidadMadera = 0;
