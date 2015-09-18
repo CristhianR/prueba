@@ -23,7 +23,7 @@ public class Reliquias {
         reliquias.insertarInicio(NombreReliquia);   
     }
 
-
+	//Creacion de metodos de la clase con sets y gets.
 
 	public String getNombreReliquia() {
 		return this.NombreReliquia;
