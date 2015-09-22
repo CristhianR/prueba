@@ -19,6 +19,7 @@ public class Jugador {
     int CantidadCobre;
     int PiedraMagica;
     String TipoArma;
+    String TipoEscudo;
     String Rango;
     String Recursos;
     int ExpBatalla;
@@ -29,7 +30,7 @@ public class Jugador {
     Se crea el constructor.
     */
     public void Jugador() {
-        //Valores predeterminados de los atributos.
+        
         Rango = "Novato";
         Meritocracia = 0;
         CantidadMadera = 0;
@@ -47,7 +48,7 @@ public class Jugador {
     }
     
     /*
-    Se crean los métodos de la clase con sets y gets.
+    Se crean los mÃ©todos de la clase con sets y gets.
     */
     public String getNombre() {
         return this.Nombre;
@@ -67,7 +68,16 @@ public class Jugador {
     }
     
      
-    public String getRango(){
+    public String getEscudos() {
+		return this.TipoEscudo;
+	}
+
+	public void setEscudos(String TipoEscudo) {
+		this.TipoEscudo = TipoEscudo;
+	}
+	
+
+	public String getRango(){
         return this.Rango;
     }
     
