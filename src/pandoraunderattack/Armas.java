@@ -1,7 +1,6 @@
 
 package pandoraunderattack;
 
-
 /**
  * Se declara la clase Armas.
  * @author cristhian
@@ -21,8 +20,8 @@ public class Armas {
     
     
     /**
-     * Se crea el método comprobar.
-     * Este método comprueba si un jugador tiene los recuros necesarios para crear un arma.
+     * Se crea el mÃ©todo comprobar.
+     * Este mÃ©todo comprueba si un jugador tiene los recuros necesarios para crear un arma.
      * @param jug , pues comprueba los recursos propios de cada jugador.
      */
     public void Comprobar( Jugador jug){
@@ -42,12 +41,6 @@ public class Armas {
         if((NombreArma == "Varita")&& (jug.CantidadCobre == 50)&& (jug.CantidadMadera == 2)){
             jug.setArmas("Varita");
             Comprobar = true;}
-        if((NombreArma == "Armadura")&& (jug.CantidadOro == 20)&& (jug.CantidadHierro == 100)&& (jug.CantidadAcero == 20)){
-            jug.setArmas("Armadura");
-            Comprobar = true;}
-        if((NombreArma == "Escudo")&& (jug.CantidadOro == 5)&& (jug.CantidadHierro == 20)&& (jug.CantidadMadera == 100)){
-            jug.setArmas("Escudo");
-            Comprobar = true;}
         if((NombreArma == "Claymore")&& (jug.CantidadOro == 200)&& (jug.CantidadAcero == 100)&& (jug.getArmas() == "Espada")){
             jug.setArmas("Claymore");
             Comprobar = true;}
@@ -60,16 +53,13 @@ public class Armas {
         if((NombreArma == "Baston")&& (jug.CantidadOro == 250)&& (jug.PiedraMagica == 1)&& (jug.getArmas() == "Varita")){
             jug.setArmas("Baston");
             Comprobar = true;}
-        if((NombreArma == "MagiaAbsorbente")&& (jug.PiedraMagica == 2)&& (jug.getArmas() == "Armadura")&& (jug.getArmas() == "Escudo")){
-            jug.setArmas("MagiaAbsorbente");
-            Comprobar = true;}
          else {
             Comprobar = false;
         }
     }
     
     public void CrearArmar(int TiposRecursos,int CantidadRecursos,int CantidadJugadores,String NombreArma){
-        // este método solo imprime el resultado del método anteiror.
+        // este mÃ©todo solo imprime el resultado del mÃ©todo anteiror.
         if(Comprobar = true){
             
             System.out.println("Arma creada: " + NombreArma);
@@ -79,7 +69,7 @@ public class Armas {
     
     
     public void CrearArmarEspecial(int TiposRecursos,int CantidadRecursos,int CantidadJugadores,String NombreArma){
-        // este método solo imprime el resultado del método anteiror.
+        // este mÃ©todo solo imprime el resultado del mÃ©todo anteiror.
         if(Comprobar = true){
             
             System.out.println("Arma creada: " + NombreArma);
@@ -87,4 +77,3 @@ public class Armas {
         
       }
     
-}
